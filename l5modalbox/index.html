@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Modal Box</title>
+
+	<!-- fontawesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<h2>Modal Sign Up</h2>
+		<button type="button" id="btn-signup">Sign Up</button>
+		<button type="button" id="btn-fullscreen">Open Full Screen</button>
+		<button type="button" id="btn-closefullscreen">Close Full Screen</button>
+
+	</div>
+
+	<!-- Start Modal Area -->
+		<!-- Start sign up -->
+	<div id="signupmodal" class="modal">
+		<span class="btn-close">x</span>
+
+		<form class="form" action="" method="">
+
+			<h2>Register Form</h2>
+
+			<div class="input-group">
+				<i class="fas fa-user"></i>
+				<input type="text" name="username" id="username" class="input-group-text" placeholder="Username">
+			</div>
+
+			<div class="input-group">
+				<i class="fas fa-envelope"></i>
+				<input type="email" name="eamil" id="email" class="input-group-text" placeholder="Email">
+			</div>
+
+			<div class="input-group">
+				<i class="fas fa-key"></i>
+				<input type="password" name="password" id="password" class="input-group-text" placeholder="Password">
+			</div>
+
+			<div class="d-grid">
+				<button type="submit" class="btn">Register</button>
+			</div>
+
+		</form>
+
+	</div>
+		<!-- End sign up -->
+	<!-- End Modal Area -->
+
+
+	<script type="text/javascript" src="./app.js"></script>
+
+
+</body>
+</html>
